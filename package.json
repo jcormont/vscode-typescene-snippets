@@ -3,7 +3,14 @@
     "displayName": "Typescene snippets",
     "description": "Snippets for Typescene development",
     "version": "0.0.1",
+    "icon": "logo.png",
     "publisher": "jcormont",
+    "author": "Jelmer Cormont",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jcormont/vscode-typescene-snippets.git"
+    },
+    "homepage": "https://typescene.dev",
     "engines": {
         "vscode": "^1.28.0"
     },
