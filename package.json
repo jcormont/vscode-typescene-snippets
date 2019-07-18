@@ -1,0 +1,25 @@
+{
+    "name": "vscode-typescene-snippets",
+    "displayName": "Typescene snippets",
+    "description": "Snippets for Typescene development",
+    "version": "0.0.1",
+    "publisher": "jcormont",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets.js.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets.ts.json"
+            }
+        ]
+    }
+}
