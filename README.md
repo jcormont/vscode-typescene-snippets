@@ -14,6 +14,5 @@ All snippets are available in JavaScript and TypeScript files.
 | `dva`   | `dialogViewActivityClass` | DialogViewActivity class |
 | `apa`   | `activityClass`           | AppActivity class        |
 | `vcmp`  | `viewComponent`           | ViewComponent class      |
-| `vhmr`  | `viewHMR` or `hmrView`    | Basic view with HMR      |
+| `jsx`   | `jsxView`                 | View with JSX import     |
 | `svc`   | `serviceClass`            | ManagedService class     |
-| `obs`   | `observerClass`           | Observer (full) class    |

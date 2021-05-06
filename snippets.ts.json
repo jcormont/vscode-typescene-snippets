@@ -70,30 +70,27 @@
         "prefix": ["vcmp", "viewComponent"],
         "body": [
             "import { ViewComponent } from \"typescene\";",
-            "import view from \"./view\";",
             "",
-            "export default class $1 extends ViewComponent.with(view) {",
-            "\tstatic preset: ViewComponent.PresetFor<$1>;",
-            "",
-            "\t$0",
+            "export default class $1 extends ViewComponent.with({",
+            "\tview: ($0",
+            "\t)",
+            "}) {",
+            "\t// Event handlers:",
             "}"
         ],
         "description": "Typescene ViewComponent class"
     },
-    "vhmr": {
-        "prefix": ["vhmr", "viewHMR", "hmrView"],
+    "jsx": {
+        "prefix": ["jsx", "jsxView"],
         "body": [
-            "import { HMR } from \"@typescene/webapp\";",
-            "import { UICell } from \"typescene\";",
+            "import { JSX } from \"typescene\";",
             "",
-            "export default HMR.enableViewReload(",
-            "\tmodule,",
-            "\tUICell.with(",
-            "\t\t$0",
-            "\t)",
+            "export default (",
+            "\t<cell>$0",
+            "\t</cell>",
             ")"
         ],
-        "description": "Basic Typescene view with Hot Module Reload (Web app)"
+        "description": "Typescene JSX view"
     },
     "svc": {
         "prefix": ["svc", "serviceClass", "managedServiceClass"],
@@ -107,16 +104,5 @@
             "}"
         ],
         "description": "Typescene ManagedService class"
-    },
-    "obs": {
-        "prefix": ["obs", "observerClass"],
-        "body": [
-            "class $1Observer {",
-            "\tconstructor (public readonly $2: $1) { }",
-            "\t$0",
-            "}",
-            "$1.observe($1Observer);"
-        ],
-        "description": "Typescene component observer (as a separate class)"
     }
 }

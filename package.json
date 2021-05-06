@@ -24,7 +24,15 @@
                 "path": "./snippets.js.json"
             },
             {
+                "language": "jsx",
+                "path": "./snippets.js.json"
+            },
+            {
                 "language": "typescript",
+                "path": "./snippets.ts.json"
+            },
+            {
+                "language": "typescriptreact",
                 "path": "./snippets.ts.json"
             }
         ]
